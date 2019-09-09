@@ -10,3 +10,6 @@ Client/Debug/vc140.idb
 *.pdb
 *.ilk
 *.db
+
+
+db.lock
