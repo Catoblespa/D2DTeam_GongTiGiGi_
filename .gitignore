@@ -43,5 +43,7 @@ ipch/
 # fuck u
 *.opendb
 *.opensdf
+*.ipch
+*.VC.db
 
 
