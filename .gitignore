@@ -12,15 +12,4 @@ Client/Debug/vc140.idb
 *.db
 
 
-# Visual C++ cache files
-ipch/
-*.app
-*.ncb
-*.opendb
-*.opensdf
-*.sdf
-*.cachefile
-
-# fuck u
-*.opendb
-*.opensdf
+db.lock
