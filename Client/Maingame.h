@@ -26,7 +26,6 @@ private:
 	CTextureMgr*		m_pTextureMgr;
 	CKeyMgr*			m_pKeyMgr;
 	CTimeMgr*			m_pTimeMgr;
-
 	CGameObject*		m_pTerrain;
 };
 
