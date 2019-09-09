@@ -50,6 +50,7 @@ using namespace std;
 #include "TextureMgr.h"
 #include "KeyMgr.h"
 #include "TimeMgr.h"
+#include "CollisionMgr.h"
 
 //vld
 #include "vld.h"

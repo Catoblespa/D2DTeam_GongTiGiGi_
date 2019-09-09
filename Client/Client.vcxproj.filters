@@ -49,6 +49,9 @@
     <Filter Include="98.Managers\05.TimeMgr">
       <UniqueIdentifier>{72642fee-a693-40cb-9ca8-0b4ef252a864}</UniqueIdentifier>
     </Filter>
+    <Filter Include="98.Managers\06.CollisionMgr">
+      <UniqueIdentifier>{bdaf0d37-6364-4e94-9974-3cc24ae01ac8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Client.h">
@@ -102,6 +105,9 @@
     <ClInclude Include="TimeMgr.h">
       <Filter>98.Managers\05.TimeMgr</Filter>
     </ClInclude>
+    <ClInclude Include="CollisionMgr.h">
+      <Filter>98.Managers\06.CollisionMgr</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Client.cpp">
@@ -148,6 +154,9 @@
     </ClCompile>
     <ClCompile Include="TimeMgr.cpp">
       <Filter>98.Managers\05.TimeMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionMgr.cpp">
+      <Filter>98.Managers\06.CollisionMgr</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

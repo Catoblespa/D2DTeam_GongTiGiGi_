@@ -33,9 +33,9 @@ bool CCollisionMgr::TileCollision(const vector<TILE_INFO*> tile, CGameObject * p
 				D3DXVec3Cross(&vNormal[i], &D3DXVECTOR3(0.f, 0.f, 1.f), &vDir[i]);
 
 			//꼭짓점->플레이어pos
-			D3DXVECTOR3 vPlayerDir[4] =	{player->GetPos() - vPoint[0],player->GetPos() - vPoint[1],	player->GetPos() - vPoint[2],player->GetPos() - vPoint[3]};
+			D3DXVECTOR3 vPlayerDir[4] =	{player->GetInfo().vPos - vPoint[0],player->GetInfo().vPos - vPoint[1],	player->GetInfo().vPos - vPoint[2],player->GetInfo().vPos - vPoint[3]};
 
-			//vNormal . vMouseDir (내적)
+			//vNormal . vPlayerDir (내적)
 			for (int i = 0; i < 4; ++i)
 			{
 				//예각
