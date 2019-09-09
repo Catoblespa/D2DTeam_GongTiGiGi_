@@ -4,7 +4,7 @@
 IMPLEMENT_SINGLETON(CDeviceMgr)
 
 CDeviceMgr::CDeviceMgr()
-	: m_pSDK(nullptr), m_pDevice(nullptr)
+	: m_pSDK(nullptr), m_pDevice(nullptr), m_pLine(nullptr)
 {
 }
 
@@ -22,6 +22,11 @@ LPDIRECT3DDEVICE9 CDeviceMgr::GetDevice()
 LPD3DXSPRITE CDeviceMgr::GetSprite()
 {
 	return m_pSprite;
+}
+
+LPD3DXLINE CDeviceMgr::GetLine()
+{
+	return m_pLine;
 }
 
 HRESULT CDeviceMgr::InitDevice(MODE eMode)
@@ -83,6 +88,14 @@ HRESULT CDeviceMgr::InitDevice(MODE eMode)
 	hr = D3DXCreateSprite(m_pDevice, &m_pSprite);
 	FAILED_CHECK_MSG_RETURN(hr, L"D3DXCreateSprite Failed", E_FAIL);
 
+	// 扼牢 Com按眉 积己
+	hr = D3DXCreateLine(m_pDevice, &m_pLine);
+	FAILED_CHECK_MSG_RETURN(hr, L"D3DXCreateLine Failed", E_FAIL);
+
+	m_pLine->SetAntialias(FALSE);
+	m_pLine->SetGLLines(FALSE);
+	m_pLine->SetWidth(10.f);
+
 	return S_OK;
 }
 
@@ -112,6 +125,8 @@ void CDeviceMgr::Render_End()
 void CDeviceMgr::Release()
 {
 	// Com按眉 秦力
+	if(m_pLine->Release())
+		MessageBox(0, L"m_pLine Release Failed", L"System Error", MB_OK);
 	if(m_pSprite->Release())
 		MessageBox(0, L"m_pSprite Release Failed", L"System Error", MB_OK);
 	if (m_pDevice->Release())
