@@ -11,6 +11,7 @@ public:
 	virtual int Update() PURE;
 	virtual void LateUpdate() PURE;
 	virtual void Render() PURE;
+	INFO GetInfo();
 
 protected:
 	virtual HRESULT Initialize() PURE;
@@ -23,6 +24,7 @@ protected:
 	CKeyMgr*		m_pKeyMgr;
 	CTimeMgr*		m_pTimeMgr;
 
+	INFO			m_pInfo;
 	bool			m_bIsInit;	
 };
 

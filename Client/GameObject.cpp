@@ -27,3 +27,8 @@ HRESULT CGameObject::LateInit()
 
 	return S_OK;
 }
+
+INFO CGameObject::GetInfo()
+{
+	return m_pInfo;
+}
