@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CMaingame" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQAAAIAAEAAAQAABAAAIAAAAAQABEAAIBAAABAAAAA=</HashCode>
+      <FileName>Maingame.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CGameObject" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQAAAYAAgAAAQAABAAAIAAAAAYAAAAAABAAABAAAEA=</HashCode>
+      <FileName>GameObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMouse" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Mouse.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTerrain" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAQgIAAAAQAAACAAIAQAAQAAAEAAABABABAAAAA=</HashCode>
+      <FileName>Terrain.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMatrixMaker" Collapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAQAAAAAAAAAAAIAAACAAAAAA=</HashCode>
+      <FileName>MatrixMaker.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CDeviceMgr" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABEgAAAAAAAAAAAAAAgQoAAAEAIBAAAAA=</HashCode>
+      <FileName>DeviceMgr.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTextureMgr" Collapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAKhAAAAA=</HashCode>
+      <FileName>TextureMgr.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTexture" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAEAAAAEAAAAAAAAAAAAIAAAAAAAAAAAAAAAhAAAAA=</HashCode>
+      <FileName>Texture.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMultiTexture" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAABAAAAEAAAAAAAhAJAAA=</HashCode>
+      <FileName>MultiTexture.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSingleTexture" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAIAgAAAAAAAAACAAAAAAAAAEAAAAAAAhAAAAA=</HashCode>
+      <FileName>SingleTexture.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CKeyMgr" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAQAgAAAAAgACQAAAABAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>KeyMgr.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CScrollMgr" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAABAAAAAAAQEAAAAAAAAAAg=</HashCode>
+      <FileName>ScrollMgr.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTimeMgr" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAARAAAAABAAAAAAAAAggAACAACAAAAAA=</HashCode>
+      <FileName>TimeMgr.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>
