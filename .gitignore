@@ -12,5 +12,15 @@ Client/Debug/vc140.idb
 *.db
 
 
-db.lock
-/ipch/CLIENT-cdb71b7f/CLIENT-e0364f8b.ipch
+# Visual C++ cache files
+ipch/
+*.app
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+
+# fuck u
+*.opendb
+*.opensdf
