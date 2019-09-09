@@ -1,3 +1,17 @@
-﻿  Terrain.cpp
-  Client.vcxproj -> D:\김태윤\99C\4개월차\Framework99C\Debug\Client.exe
-  Client.vcxproj -> D:\김태윤\99C\4개월차\Framework99C\Debug\Client.pdb (Full PDB)
+﻿  stdafx.cpp
+  TimeMgr.cpp
+  TextureMgr.cpp
+  Texture.cpp
+  Terrain.cpp
+  SingleTexture.cpp
+  ScrollMgr.cpp
+  MultiTexture.cpp
+  Mouse.cpp
+  MatrixMaker.cpp
+  Maingame.cpp
+  KeyMgr.cpp
+  GameObject.cpp
+  DeviceMgr.cpp
+  Client.cpp
+  코드를 생성하고 있습니다...
+  Client.vcxproj -> C:\Users\zooz2\Source\Repos\D2DTeam_GongTiGiGi_\Debug\Client.exe

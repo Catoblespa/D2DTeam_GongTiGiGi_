@@ -13,6 +13,7 @@ private:
 public:
 	LPDIRECT3DDEVICE9 GetDevice();
 	LPD3DXSPRITE GetSprite();
+	LPD3DXLINE GetLine();
 
 public:
 	HRESULT InitDevice(MODE eMode);
@@ -41,7 +42,7 @@ private:
 	// COM (Component Object Model)
 	// 마이크로소프트사에서 제시하는 프로그래밍 모델
 	// 프로그래밍을 부품 조립하듯이 해보자.
-
+	LPD3DXLINE m_pLine;
 	
 };
 

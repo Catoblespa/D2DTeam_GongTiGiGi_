@@ -1,16 +1,26 @@
 #pragma once
 #include "GameObject.h"
+
+
+#define NORMAL_TILE	0
+#define BOMB_TILE	1
+#define JUMP_TILE	2
+#define LEFT_TILE	3
+#define RIGHT_TILE	4
+#define BROKEN_TILE	5
+#define BLACK_TILE	6
+
 class CTerrain :
 	public CGameObject
 {
+private:
+	bool m_bIsData;
+
 private:
 	CTerrain();
 
 public:
 	virtual ~CTerrain();
-
-public:
-	int GetTileIndex(const D3DXVECTOR3& vPos);
 
 public:
 	// CGameObject을(를) 통해 상속됨
@@ -23,11 +33,14 @@ private:
 	virtual HRESULT LateInit() override;
 	virtual void Release() override;
 
-public:
-	void TileChange(const D3DXVECTOR3& vPos, BYTE byDrawID, BYTE byOption = 0);
+private:
+	bool IsPicking();
+
+	bool CheckInOut(const POINT& pt, const int iIndex);
 
 private:
-	bool IsPicking(const D3DXVECTOR3& vPos, size_t iIndex);
+	void SaveTile(const wstring& wstrFilePath);
+	void LoadTile(const wstring& wstrFilePath);
 
 public:
 	static CTerrain* Create();

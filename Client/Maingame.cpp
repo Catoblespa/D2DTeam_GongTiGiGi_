@@ -49,25 +49,6 @@ HRESULT CMaingame::Initialize()
 	hr = m_pDeviceMgr->InitDevice(CDeviceMgr::MODE_WIN);
 	FAILED_CHECK_MSG_RETURN(hr, L"장치초기화 실패", E_FAIL);
 
-	hr = m_pTextureMgr->LoadTexture(
-		CTextureMgr::SINGLE_TEXTURE, L"../Texture/Cube.png", L"Cube");
-	FAILED_CHECK_MSG_RETURN(hr, L"Cube Texture Load Failed", E_FAIL);
-
-	hr = m_pTextureMgr->LoadTexture(
-		CTextureMgr::MULTI_TEXTURE, L"../Texture/Stage/Player/Attack/AKIHA_AKI01_00%d.png",
-		L"Player", L"Attack", 6);
-	FAILED_CHECK_MSG_RETURN(hr, L"Player Attack Texture Load Failed", E_FAIL);
-
-	hr = m_pTextureMgr->LoadTexture(
-		CTextureMgr::MULTI_TEXTURE, L"../Texture/Stage/Player/Dash/AKIHA_AKI13_00%d.png",
-		L"Player", L"Dash", 11);
-	FAILED_CHECK_MSG_RETURN(hr, L"Player Dash Texture Load Failed", E_FAIL);
-
-	hr = m_pTextureMgr->LoadTexture(
-		CTextureMgr::MULTI_TEXTURE, L"../Texture/Stage/Terrain/Tile/Tile%d.png",
-		L"Terrain", L"Tile", 38);
-	FAILED_CHECK_MSG_RETURN(hr, L"Terrain Tile Texture Load Failed", E_FAIL);
-
 	// Terrain
 	m_pTerrain = CTerrain::Create();
 	NULL_CHECK_MSG_RETURN(m_pTerrain, L"Terrain Create Failed", E_FAIL);
